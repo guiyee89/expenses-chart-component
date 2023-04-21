@@ -1,0 +1,35 @@
+{
+  "name": "expenses-chart-component-main",
+  "version": "1.0.0",
+  "description": "expenses chart component",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "@cubejs-client/core": "^0.31.0",
+    "chart.js": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guiyee89/expenses-chart-component.git"
+  },
+  "keywords": [
+    "[\"Chart\"",
+    "\"Expenses",
+    "Chart\"",
+    "\"Chart",
+    "component\"]"
+  ],
+  "author": "guiyee89",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guiyee89/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/guiyee89/expenses-chart-component#readme"
+}

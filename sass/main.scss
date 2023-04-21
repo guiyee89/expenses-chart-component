@@ -45,7 +45,7 @@ main{
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 45rem;
+    width: clamp(35rem, 80% ,45rem);
 
     background-color: $color-primary-1;
     border-radius: 2rem;
@@ -71,7 +71,7 @@ header{
 }
 
 article{
-    width: 45rem;
+    width: clamp(35rem, 80% ,45rem);
     background-color: $color-neutral-4;
     border-radius: 2rem;
     padding: 2.5rem;
