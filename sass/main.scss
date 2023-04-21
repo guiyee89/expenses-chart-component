@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+/////////
+// COLORS
+/////////
+$color-primary-1: hsl(10, 79%, 65%);
+$color-primary-2: hsl(186, 34%, 60%);
+
+$color-neutral-1: hsl(25, 47%, 15%);
+$color-neutral-2: hsl(28, 10%, 53%);
+$color-neutral-3: hsl(27, 66%, 92%);
+$color-neutral-4: hsl(33, 100%, 98%);
+///////////////////
+// GENERAL && RESET
+///////////////////
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: "DM Sans", sans-serif;
+	background-color: $color-neutral-3;
+}
+//////////////////
+// CUSTOM STYLE //
+//////////////////
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 45rem;
+
+    background-color: $color-primary-1;
+    border-radius: 2rem;
+    padding: 2.2rem;
+    margin-bottom: 2rem;
+    color: $color-neutral-3;
+    box-shadow: rgba(233, 72, 72, 0.2) 0px 7px 29px 0px;
+
+    span{
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+    p{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    img{
+        grid-column: 2/3;
+        grid-row: 1/ span 2;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+article{
+    width: 45rem;
+    background-color: $color-neutral-4;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: rgba(103, 99, 99, 0.2) 0px 7px 29px 0px;
+
+    h1{
+        text-align: left;
+        margin-bottom: 4rem;
+    }
+    .month-spending{
+        margin-bottom: 2.5rem;
+    }
+
+    .month-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid #f8e9dd;
+        padding-bottom: 1.2rem;
+        padding-top: 2.4rem;
+
+        span{
+            font-size: 1.5rem;
+            color: $color-neutral-2;
+        }
+        .spending{
+            color: $color-neutral-1;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 1;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            align-self: end;
+        }
+        .stats-period{
+            grid-column: 2/3;
+            grid-row: 3/-1;
+            align-self:end;
+            justify-self: end;
+            font-size: 1.5rem;
+            color: $color-neutral-2;
+        }
+        .stats-percent{
+            justify-self: right;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            align-self: end;
+            justify-self: end;
+            color: $color-neutral-1;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+    }
+}
