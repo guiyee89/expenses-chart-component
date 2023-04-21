@@ -36,24 +36,7 @@ function createChart(data) {
                 legend: {
                     display: false
                 },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            return context.dataset.data[context.dataIndex];
-                        }
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true
-                },
-                x: {
-                    ticks: {
-                        display: false
-                    }
-                }
-            }
+            }, 
         }
     });
 }
