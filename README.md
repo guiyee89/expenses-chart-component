@@ -15,5 +15,5 @@
 
 ### Links 🌐
 
-- Live Site URL 🔴: [click!](https://guiyee89.github.io/Age-calculator-FE-Mentor/)
+- Live Site URL 🔴: [click!](https://guiyee89.github.io/expenses-chart-component/)
 - My Frontend Mentor profile 👦: [click!](https://www.frontendmentor.io/profile/guiyee89)
